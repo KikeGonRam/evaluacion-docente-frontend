@@ -37,3 +37,14 @@ El objetivo principal es demostrar la capacidad de integración de una interfaz 
 
 ---
 **Proyecto desarrollado como parte de la evaluación técnica de arquitectura Java/Frontend.**
+
+## 📸 Vista Previa del Sistema
+
+| Dashboard Institucional | Formulario de Evaluación |
+|---|---|
+| ![Dashboard](./screenshots/dashboard.png) | ![Evaluación](./screenshots/evaluacion.png) |
+
+| Cuadro de Honor | Feedback de Usuario |
+|---|---|
+| ![Ranking](./screenshots/ranking.png) | ![Feedback](./screenshots/feedback.png) |
+
