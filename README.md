@@ -46,5 +46,5 @@ El objetivo principal es demostrar la capacidad de integración de una interfaz 
 
 | Cuadro de Honor | Feedback de Usuario |
 |---|---|
-| ![Ranking](./screenshots/ranking.png) | ![Feedback](./screenshots/feedback.png) |
+| ![Cuestionario](./screenshots/cuestionario.png) | ![Feedback](./screenshots/feedback.png) |
 
