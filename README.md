@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sistema de Evaluación Docente Académica (SED) - UTVT
 
-## Getting Started
+Este proyecto es el frontend moderno y profesional para el **Sistema de Evaluación Docente** de la **Universidad Tecnológica del Valle de Toluca (UTVT)**. Desarrollado con Next.js 15 y Tailwind CSS, el sistema ofrece una experiencia de usuario de alto nivel orientada a la gestión y análisis de la calidad educativa.
 
-First, run the development server:
+## 🚀 Características Principales
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Dashboard Inteligente:** Visualización de métricas clave (Total de evaluaciones, docentes, cuestionarios y score global) con indicadores de tendencia.
+- **Analítica Visual:** Gráficas dinámicas de rendimiento mensual y distribución de score institucional.
+- **Gestión Integral:** Módulos completos para la administración de:
+  - **Docentes:** Catálogo institucional con perfiles detallados.
+  - **Estudiantes:** Padrón escolar habilitado para evaluar.
+  - **Cuestionarios:** Diseño dinámico de instrumentos de evaluación.
+  - **Evaluaciones:** Proceso de registro con escala visual humanizada e iconos vectoriales.
+- **Feedback de Alto Impacto:** Sistema de notificaciones centralizadas (`ActionFeedback`) con efectos de celebración para éxitos y alertas visuales para errores.
+- **Ranking Institucional:** Cuadro de honor con gamificación (medallas de oro, plata y bronce) y sellos de excelencia académica.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Identidad Visual y Diseño
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+El sistema ha sido diseñado bajo una estética de **"Excelencia Académica"**, utilizando la identidad corporativa real de la UTVT:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Paleta de Colores:** Verde Institucional (`#006B3F`), Verde Claro (`#00A85A`), Dorado Premium (`#C9A84C`) y Verde Profundo (`#050F0A`).
+- **Glassmorphism:** Uso de transparencias suaves, desenfoques de fondo (`backdrop-blur`) y bordes orgánicos para una sensación moderna y ligera.
+- **Accesibilidad:** Contraste optimizado para garantizar la legibilidad en todos los niveles operativos.
+- **Fondo Institucional:** Patrón geométrico sutil inspirado en la marca universitaria.
 
-## Learn More
+## 🛠️ Tecnologías Utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+- **Framework:** [Next.js 15](https://nextjs.org/)
+- **Estilos:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Iconografía:** [Lucide React](https://lucide.dev/) (SVG personalizados)
+- **Lenguaje:** [TypeScript](https://www.typescriptlang.org/)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Instalación y Configuración
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/KikeGonRam/evaluacion-docente-frontend.git
+   ```
 
-## Deploy on Vercel
+2. Instalar dependencias:
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Configurar variables de entorno:
+   Crear un archivo `.env.local` y definir la URL de la API:
+   ```env
+   NEXT_PUBLIC_API_URL=http://localhost:8080/api
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Ejecutar en modo desarrollo:
+   ```bash
+   npm run dev
+   ```
+
+## 📄 Licencia
+
+Este proyecto es para uso exclusivo de la Universidad Tecnológica del Valle de Toluca (UTVT).
+
+---
