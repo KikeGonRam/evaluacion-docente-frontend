@@ -1,60 +1,39 @@
-# Sistema de Evaluación Docente Académica (SED) - UTVT
+# Examen de Evaluación: Frontend SED - UTVT (Java Spring Boot Ecosystem)
 
-Este proyecto es el frontend moderno y profesional para el **Sistema de Evaluación Docente** de la **Universidad Tecnológica del Valle de Toluca (UTVT)**. Desarrollado con Next.js 15 y Tailwind CSS, el sistema ofrece una experiencia de usuario de alto nivel orientada a la gestión y análisis de la calidad educativa.
+Este proyecto constituye la entrega del **Examen de Evaluación** para el desarrollo de un Sistema de Evaluación Docente (SED) para la **Universidad Tecnológica del Valle de Toluca (UTVT)**. 
 
-## 🚀 Características Principales
+El objetivo principal es demostrar la capacidad de integración de una interfaz moderna en Next.js con un ecosistema de servicios robusto basado en **Java y Spring Boot**.
 
-- **Dashboard Inteligente:** Visualización de métricas clave (Total de evaluaciones, docentes, cuestionarios y score global) con indicadores de tendencia.
-- **Analítica Visual:** Gráficas dinámicas de rendimiento mensual y distribución de score institucional.
-- **Gestión Integral:** Módulos completos para la administración de:
-  - **Docentes:** Catálogo institucional con perfiles detallados.
-  - **Estudiantes:** Padrón escolar habilitado para evaluar.
-  - **Cuestionarios:** Diseño dinámico de instrumentos de evaluación.
-  - **Evaluaciones:** Proceso de registro con escala visual humanizada e iconos vectoriales.
-- **Feedback de Alto Impacto:** Sistema de notificaciones centralizadas (`ActionFeedback`) con efectos de celebración para éxitos y alertas visuales para errores.
-- **Ranking Institucional:** Cuadro de honor con gamificación (medallas de oro, plata y bronce) y sellos de excelencia académica.
+## 🛠️ Integración del Ecosistema Técnico
 
-## 🎨 Identidad Visual y Diseño
+- **Backend:** Desarrollado íntegramente en **Java Spring Boot**, exponiendo una API RESTful para la persistencia y lógica de negocio.
+- **Frontend:** Implementado con **Next.js 15** y **Tailwind CSS v4**, optimizado para el consumo eficiente de recursos del backend.
+- **Contexto de Evaluación:** Este proyecto ha sido diseñado para cumplir con los estándares de arquitectura de software, UX/UI institucional y buenas prácticas de desarrollo web.
 
-El sistema ha sido diseñado bajo una estética de **"Excelencia Académica"**, utilizando la identidad corporativa real de la UTVT:
+## 🚀 Características del Sistema
 
-- **Paleta de Colores:** Verde Institucional (`#006B3F`), Verde Claro (`#00A85A`), Dorado Premium (`#C9A84C`) y Verde Profundo (`#050F0A`).
-- **Glassmorphism:** Uso de transparencias suaves, desenfoques de fondo (`backdrop-blur`) y bordes orgánicos para una sensación moderna y ligera.
-- **Accesibilidad:** Contraste optimizado para garantizar la legibilidad en todos los niveles operativos.
-- **Fondo Institucional:** Patrón geométrico sutil inspirado en la marca universitaria.
+- **Dashboard Inteligente:** Visualización de métricas clave del sistema con indicadores de tendencia.
+- **Analítica Visual:** Gráficas dinámicas de rendimiento y calidad académica.
+- **Gestión Institucional:** Administración completa de Docentes, Estudiantes, Cuestionarios y Aplicaciones de Evaluación.
+- **Feedback Narrativo:** Sistema `ActionFeedback` con animaciones de éxito y error para una mejor experiencia de usuario.
+- **Branding UTVT:** Identidad visual real basada en los colores Verde Institucional y Dorado Premium.
 
-## 🛠️ Tecnologías Utilizadas
+## 📦 Configuración para el Examen
 
-- **Framework:** [Next.js 15](https://nextjs.org/)
-- **Estilos:** [Tailwind CSS v4](https://tailwindcss.com/)
-- **Iconografía:** [Lucide React](https://lucide.dev/) (SVG personalizados)
-- **Lenguaje:** [TypeScript](https://www.typescriptlang.org/)
+1. **Backend (Java Spring Boot):**
+   Asegúrese de tener el servidor de Spring Boot ejecutándose en el puerto `8080` (o el configurado en la API).
 
-## 📦 Instalación y Configuración
-
-1. Clonar el repositorio:
-   ```bash
-   git clone https://github.com/KikeGonRam/evaluacion-docente-frontend.git
-   ```
-
-2. Instalar dependencias:
+2. **Frontend (Next.js):**
    ```bash
    npm install
+   npm run dev
    ```
 
-3. Configurar variables de entorno:
-   Crear un archivo `.env.local` y definir la URL de la API:
+3. **Variables de Entorno:**
+   Definir en `.env.local`:
    ```env
    NEXT_PUBLIC_API_URL=http://localhost:8080/api
    ```
 
-4. Ejecutar en modo desarrollo:
-   ```bash
-   npm run dev
-   ```
-
-## 📄 Licencia
-
-Este proyecto es para uso exclusivo de la Universidad Tecnológica del Valle de Toluca (UTVT).
-
 ---
+**Proyecto desarrollado como parte de la evaluación técnica de arquitectura Java/Frontend.**
