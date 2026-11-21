@@ -1,34 +1,38 @@
 # Evaluación Docente — Frontend (SED · UTVT)
 
-Interfaz web del **Sistema de Evaluación Docente (SED)** de la Universidad Tecnológica del Valle de Toluca. Construida en **Next.js 15** y **Tailwind CSS v4**, consume la API en **Java / Spring Boot** para gestionar docentes, estudiantes, cuestionarios y evaluaciones.
+Interfaz web del **Sistema de Evaluación Docente** de la Universidad Tecnológica del Valle de Toluca. Construida en **Next.js 15** y **Tailwind CSS v4**, consume la API en **Java / Spring Boot** para gestionar docentes, estudiantes, cuestionarios y evaluaciones.
 
+[![Seguridad](https://github.com/KikeGonRam/evaluacion-docente-frontend/actions/workflows/security.yml/badge.svg)](https://github.com/KikeGonRam/evaluacion-docente-frontend/actions/workflows/security.yml)
 ![Next.js](https://img.shields.io/badge/Next.js-15-000000?logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-06B6D4?logo=tailwindcss&logoColor=white)
 
-🔗 **Demo:** [evaluacion-docente-frontend.vercel.app](https://evaluacion-docente-frontend.vercel.app) · **Backend:** [evaluacion-docente-api](https://github.com/KikeGonRam/evaluacion-docente-api)
+🔗 [Demo](https://evaluacion-docente-frontend.vercel.app) · [Backend](https://github.com/KikeGonRam/evaluacion-docente-api) · [Seguridad](SECURITY.md)
 
 ## Características
 
-- **Dashboard** con métricas clave e indicadores de tendencia.
-- **Analítica visual:** gráficas de rendimiento y calidad académica.
-- **Gestión institucional:** docentes, estudiantes, cuestionarios y aplicaciones de evaluación.
-- **Feedback narrativo:** componente `ActionFeedback` con animaciones de éxito y error.
-- **Identidad UTVT:** paleta institucional (verde y dorado).
+| Área | Qué ofrece |
+| --- | --- |
+| Dashboard | Métricas clave e indicadores de tendencia. |
+| Analítica | Gráficas de rendimiento y calidad académica. |
+| Gestión | Docentes, estudiantes, cuestionarios y aplicaciones de evaluación. |
+| Feedback | Componente `ActionFeedback` con animaciones de éxito y error. |
+| Identidad | Paleta institucional UTVT (verde y dorado). |
 
 ## Arquitectura
 
-El frontend (Next.js) consume la API REST de Spring Boot. La ruta `app/backend/[...path]/route.ts` actúa como proxy hacia el backend, evitando exponer su URL directamente al navegador.
+El frontend (Next.js) consume la API REST de Spring Boot. La ruta
+`app/backend/[...path]/route.ts` actúa como proxy hacia el backend, sin exponer su URL
+al navegador.
 
 ```
 app/
-├── page.tsx                 # Inicio
-├── dashboard/page.tsx       # Métricas y analítica
-├── docentes/page.tsx        # Gestión de docentes
-├── estudiantes/page.tsx     # Gestión de estudiantes
-├── cuestionarios/page.tsx   # Cuestionarios
-├── evaluaciones/page.tsx    # Aplicaciones de evaluación
+├── page.tsx                    # Inicio
+├── dashboard/page.tsx          # Métricas y analítica
+├── docentes/page.tsx           # Gestión de docentes
+├── estudiantes/page.tsx        # Gestión de estudiantes
+├── cuestionarios/page.tsx      # Cuestionarios
+├── evaluaciones/page.tsx       # Aplicaciones de evaluación
 └── backend/[...path]/route.ts  # Proxy a la API Spring Boot
 ```
 
@@ -56,7 +60,7 @@ NEXT_PUBLIC_API_URL=http://localhost:8080/api
 | `npm run dev` | Desarrollo con recarga |
 | `npm run build` | Compilar para producción |
 | `npm start` | Servir la build |
-| `npm run lint` | Revisar el código con ESLint |
+| `npm run lint` | Revisar con ESLint |
 
 ## Vista previa
 
@@ -67,6 +71,12 @@ NEXT_PUBLIC_API_URL=http://localhost:8080/api
 | Cuadro de honor | Feedback de usuario |
 |---|---|
 | ![Cuestionario](./screenshots/cuestionario.png) | ![Feedback](./screenshots/feedback.png) |
+
+## Seguridad
+
+Análisis estático (Semgrep) y escaneo de secretos (Gitleaks) corren en cada *push* y PR
+(ver [workflow](.github/workflows/security.yml)). Las variables de entorno no se
+versionan. Reporta vulnerabilidades según [SECURITY.md](SECURITY.md).
 
 ## Tecnologías
 
